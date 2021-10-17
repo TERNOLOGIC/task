@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# Intro
+Ternologic Project front-end.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![NPM Version][npm-image]][npm-url]
+[![React Version][react-image]][react-url]
+[![Material-UI Version][material-ui-image]][material-ui-url]
 
-## Available Scripts
+# Codebase structure
+Please do not put all of your code in one file / folder. Rather choose (or come up with) a designing pattern - like MCV, Clean Architecture etc. that makes
+it easier to read your code and reason about it. 
 
-In the project directory, you can run:
+Remember that you are not writing the code for yourself. So, the more your code is clear and clean the better it's maintained by other developers.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Completed task should be:
+- Error free.
+- Properly commented.
+- Props documented - adhere to [JSDoc][jsdoc] syntax.
+- PropType checked - adhere to React [type checking][react-typechecking] approach.
+- Unit and integration tested.
+- All exceptions properly handled.
+- Free of type `any` unless absolutely necessary. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Nice to have:
+- End-to-end testing.
+- A document describing your design - a.k.a design doc.
 
-### `npm test`
+### Notes
+- Please don't install any dependency with exception of a library for end-to-end testing. Use only the ones defined in the package.json
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[react-url]: https://reactjs.org/
+[react-image]: https://badgen.net/badge/react/17.0.2/blue
+[npm-url]: https://www.npmjs.com/
+[npm-image]: https://badgen.net/badge/npm/6.14/red?icon=npm
+[material-ui-url]: https://material-ui.com/
+[material-ui-image]: https://badgen.net/badge/material-ui/4.11/cyan
+[jsdoc]: https://jsdoc.app/
+[react-typechecking]: https://reactjs.org/docs/typechecking-with-proptypes.html
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
