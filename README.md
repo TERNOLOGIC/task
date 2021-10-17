@@ -6,11 +6,12 @@ Ternologic Project front-end.
 [![Material-UI Version][material-ui-image]][material-ui-url]
 
 # Codebase structure
-Please do not put all of your code in one file / folder. Rather choose (or come up with) a designing pattern - like MCV, Clean Architecture etc. that makes
+Please do not put all of your code in one file / folder. Rather choose (or come up with) a designing pattern - like MVC, Clean Architecture etc. that makes
 it easier to read your code and reason about it. 
 
 Remember that you are not writing the code for yourself. So, the more your code is clear and clean the better it's maintained by other developers.
 
+Strive to always make your components as dump (with no logic in them) as possible. Put all of your logic inside a custom hook. 
 
 ### Completed task should be:
 - Error free.
