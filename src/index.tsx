@@ -1,11 +1,24 @@
 import React from 'react';
+import { useState } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import { SCREEN_KEY } from './constants';
+import { NavigationContext } from './hooks/navigationContext';
 import reportWebVitals from './reportWebVitals';
+
+const NavigationContextProviderApp = () => {
+  const [screen, setScreen] = useState(SCREEN_KEY.HOME)
+  return <NavigationContext.Provider value={{
+    currentScreen: screen,
+    navigateToScreen: setScreen
+  }}>
+    <App />
+  </NavigationContext.Provider>
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <NavigationContextProviderApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
